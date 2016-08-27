@@ -10,7 +10,7 @@ function isTyler (name) {
   }
   return false;
 }
-isTyler(name);//Code Here
+//Code Here
 
 //////////////////PROBLEM 2////////////////////
 
@@ -46,7 +46,7 @@ isTyler(name);//Code Here
 
 //What is the difference between arguments and parameters?
 
-  //Answer Here
+  // parameters are given to the function declaration. Arguments is passed when calling the function.
 
 
 //////////////////PROBLEM 5////////////////////
@@ -56,7 +56,7 @@ isTyler(name);//Code Here
 //What are all the falsy values in JavaScript and how do you check if something is falsy?
 
 
-  //Answer Here
+  // false, 0, NaN, null, and undefined.
 
 
 
@@ -67,12 +67,19 @@ isTyler(name);//Code Here
 //Create a function called myName that returns your name
 
   //Code Here
+  function myName() {
+    return "Mark";
+
+  }
 
 
 
 //Now save the function definition of myName into a new variable called newMyName
 
-  //Code Here
+function newMyName() {
+  myName();
+
+}//Code Here
 
 //Now alert the result of invoking newMyName
 
