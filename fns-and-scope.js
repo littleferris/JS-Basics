@@ -76,11 +76,8 @@ function isTyler (name) {
 
 //Now save the function definition of myName into a new variable called newMyName
 
-function newMyName() {
-  myName();
-
-}//Code Here
-
+var newMyName = myName;
+//Code Here
 //Now alert the result of invoking newMyName
 
 
@@ -91,8 +88,13 @@ function newMyName() {
 
 //Create a function called outerFn which returns an anonymous function which returns your name.
 
-  //Code Here
-
+  function outerFn(){
+    function lastName () {
+      return "Ferris"
+      }
+      return lastName;
+  }//Code Here
+var innerFn = outerFn();
 //Now save the result of invoking outerFn into a variable called innerFn.
 
   //Code Here
