@@ -18,7 +18,11 @@ isTyler(name);//Code Here
 //Create a function called getName that uses prompt() to prompt the user for their name, then returns the name.
 
 
-  function getName ()//Code Here
+  function getName (){
+    var name = prompt("Please Enter your Name");
+    return name;
+  }
+
 
 
 //////////////////PROBLEM 3////////////////////
@@ -28,7 +32,11 @@ isTyler(name);//Code Here
 //Create a function called welcome that uses your getName function you created in the previous problem to get the users name,
 //then alerts "Welcome, " plus whatever the users name is.
 
-  //Code Here
+  function welcome() {
+    name = getName();
+    alert("Welcome, " + name);
+  }
+
 
 
 //////////////////PROBLEM 4////////////////////
